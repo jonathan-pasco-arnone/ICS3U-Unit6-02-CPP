@@ -12,9 +12,9 @@ template<size_t N>  // allows the program to pass an array into a function
 int greatestFinder(std::array<int, N> numbers) {
     // This function finds the greatest number in a list of random numbers
 
-    int previousGreatestNumber = 0;
+    int previousGreatestNumber = numbers[0];
 
-    for (int loopCounter = 0; loopCounter < 10; loopCounter++) {
+    for (int loopCounter = 1; loopCounter < 10; loopCounter++) {
         if (previousGreatestNumber < numbers[loopCounter]) {
             previousGreatestNumber = numbers[loopCounter];
         }
